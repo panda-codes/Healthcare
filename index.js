@@ -9,7 +9,7 @@ const appointmentRoute = require('./modules/appointment/appointment.routes');
 require('dotenv').config();
 
 const app = express();
-app.use(cors({ origin: 'http://127.0.0.1:5500' }));
+app.use(cors({ origin: 'https://sphare-frontend.vercel.app' }));
 
 //DATABASE CONNECTION
 mongoose.connect(process.env.mongo_connection,{})
