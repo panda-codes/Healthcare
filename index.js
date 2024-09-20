@@ -33,7 +33,7 @@ app.use(express.urlencoded({extended: false}))
 
 app.use('/',userRoute)
 app.use('/home',appointmentRoute)
-const port = 5000;
+const port = 'https://healthcare-umber.vercel.app';
 app.listen(port, () =>{
       console.log('server running on port:${port}');
 }
